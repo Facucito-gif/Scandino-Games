@@ -9,5 +9,6 @@ scale = Vector2(9.638672, 1.2773438)
 texture = ExtResource("1_tr34o")
 
 [node name="WhatsAppImage20251215At17_12_04" type="Sprite2D" parent="." unique_id=1224454383]
-position = Vector2(-14.524822, -280.2691)
+position = Vector2(-39.320774, -194.15294)
+scale = Vector2(0.019478222, 0.12525485)
 texture = ExtResource("2_hqyvl")
