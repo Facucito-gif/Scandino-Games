@@ -21,6 +21,5 @@ func spawn_enemy():
 		# Esto busca cualquier nodo que sea un Sprite y lo voltea
 		for child in enemy.get_children():
 			if child is Sprite2D or child is AnimatedSprite2D:
-				child.flip_h = true
-	
+				child.flip_h = true	
 	get_tree().current_scene.add_child(enemy)

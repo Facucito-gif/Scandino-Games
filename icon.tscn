@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://ci06colbiphnf" path="res://Tiles.png" id="1_tr34o"]
 [ext_resource type="PackedScene" uid="uid://don34yj8h1dyj" path="res://Character.tscn" id="2_hqyvl"]
-[ext_resource type="Script" uid="uid://bqerkg4x4nude" path="res://enemy_spawner.gd" id="3_ki3iq"]
 [ext_resource type="PackedScene" uid="uid://x836e6wyb8qf" path="res://bat.tscn" id="4_62ljx"]
 [ext_resource type="Script" uid="uid://cnrv7q0q04s51" path="res://spawner_izquierdo.gd" id="5_ud633"]
 [ext_resource type="Script" uid="uid://df7qeul4rk0xp" path="res://spawner_derecho.gd" id="6_yw53o"]
@@ -413,13 +412,6 @@ position = Vector2(4, -9)
 position = Vector2(-4, 17)
 zoom = Vector2(1.25, 1.25)
 
-[node name="EnemySpawner" type="Node2D" parent="." unique_id=454564557]
-script = ExtResource("3_ki3iq")
-enemy_scene = ExtResource("4_62ljx")
-
-[node name="Timer" type="Timer" parent="EnemySpawner" unique_id=1341872132]
-autostart = true
-
 [node name="SpawnerIzquierdo" type="Node2D" parent="." unique_id=1042718540]
 script = ExtResource("5_ud633")
 enemy_scene = ExtResource("4_62ljx")
@@ -432,5 +424,3 @@ enemy_scene = ExtResource("4_62ljx")
 direccion_bala = -1
 
 [node name="Timer" type="Timer" parent="SpawnerDerecho" unique_id=1845469112]
-
-[connection signal="timeout" from="EnemySpawner/Timer" to="EnemySpawner" method="_on_timer_timeout"]
