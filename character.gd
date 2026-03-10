@@ -58,7 +58,7 @@ func _on_ghost_timer_timeout():
 	# Añadirlo a la escena principal (no como hijo del personaje, o se movería con él)
 	get_tree().current_scene.add_child(ghost)
 
-# --- VOLVER AL IDLE (Ya lo tenías) ---
+# --- VOLVER AL IDLE  ---
 func _on_animated_sprite_2d_animation_finished():
 	if sprite.animation == "ATTACK":
 		sprite.play("IDLE")
