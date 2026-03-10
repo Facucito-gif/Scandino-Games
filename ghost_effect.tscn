@@ -5,7 +5,6 @@
 
 [node name="GhostEffect" type="Sprite2D" unique_id=433731700]
 z_index = 2
-position = Vector2(-14, 0)
 texture = ExtResource("1_bk28f")
 hframes = 5
 frame = 1
