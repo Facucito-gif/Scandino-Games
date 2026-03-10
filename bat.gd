@@ -1,26 +1,29 @@
 extends Area2D
 
+var direccion = 1
 var vida = 2
-var velocidad = 150.0  # Velocidad de caída
-var frecuencia = 0.05  # Qué tan rápido hace el zigzag
-var amplitud = 100.0   # Qué tan ancho es el zigzag
-var pos_inicial_x = 0
+var velocidad = 250.0 # Un poco más rápido para que sea desafío
+var frecuencia = 0.01
+var amplitud = 150.0
+var pos_inicial_y = 0
 
 func _ready():
-	pos_inicial_x = position.x
+	# Guardamos la altura a la que aparece
+	pos_inicial_y = position.y
+	# IMPORTANTE: Añadí al murciélago al grupo "enemigos" en el editor (Pestaña Nodo > Grupos)
 
 func _process(delta):
-	# Movimiento hacia abajo
-	position.y += velocidad * delta
+	# Movimiento HORIZONTAL
+	position.x += velocidad * direccion * delta
 	
-	# Movimiento zigzag (Seno)
-	position.x = pos_inicial_x + sin(position.y * frecuencia) * amplitud
+	# Zigzag VERTICAL (Seno) para que no sea una línea aburrida
+	position.y = pos_inicial_y + sin(Time.get_ticks_msec() * frecuencia) * 20.0
 	
-	# Si se sale de pantalla, borrarlo
-	if position.y > 800:
+	# Si se escapa de la pantalla, borrarlo
+	if position.x > 1500 or position.x < -200:
 		queue_free()
 
-func recibir_dano():
-	vida -= 1
+func recibir_dano(cantidad):
+	vida -= cantidad
 	if vida <= 0:
-		queue_free() # ¡Muerto!
+		queue_free()

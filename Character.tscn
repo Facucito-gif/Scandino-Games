@@ -92,16 +92,17 @@ radius = 13.0
 height = 52.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lcuhw"]
-size = Vector2(32, 21)
+size = Vector2(40, 21)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=972579330]
 script = ExtResource("1_lcuhw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=100654984]
+position = Vector2(8, 0)
 sprite_frames = SubResource("SpriteFrames_rbaxm")
 animation = &"ATTACK"
 autoplay = "ATTACK"
-frame = 3
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1731478801]
 position = Vector2(-5, 18)
@@ -113,8 +114,9 @@ wait_time = 0.05
 [node name="AttackArea" type="Area2D" parent="." unique_id=1444427596]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=601771593]
-position = Vector2(24, 17.5)
+position = Vector2(28, 17.5)
 shape = SubResource("RectangleShape2D_lcuhw")
+disabled = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="GhostTimer" to="." method="_on_ghost_timer_timeout"]
