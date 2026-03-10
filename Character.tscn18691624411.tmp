@@ -102,8 +102,7 @@ animation = &"ATTACK"
 position = Vector2(-5, 18)
 shape = SubResource("CapsuleShape2D_kx406")
 
-[node name="GhostTimer" type="Timer" parent="." unique_id=1086636889]
+[node name="Timer" type="Timer" parent="." unique_id=1086636889]
 wait_time = 0.05
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="timeout" from="GhostTimer" to="." method="_on_ghost_timer_timeout"]
