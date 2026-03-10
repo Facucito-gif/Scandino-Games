@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://ci06colbiphnf" path="res://Tiles.png" id="1_tr34o"]
 [ext_resource type="PackedScene" uid="uid://don34yj8h1dyj" path="res://Character.tscn" id="2_hqyvl"]
+[ext_resource type="Script" uid="uid://bqerkg4x4nude" path="res://enemy_spawner.gd" id="3_ki3iq"]
+[ext_resource type="PackedScene" uid="uid://x836e6wyb8qf" path="res://bat.tscn" id="4_62ljx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqyvl"]
 size = Vector2(766, 23)
@@ -403,8 +405,17 @@ tile_map_data = PackedByteArray("AAD8/wEAAAAEAA8AAAD8/wIAAAAEABAAAAD9/wEAAAAFAA8
 tile_set = SubResource("TileSet_ki3iq")
 
 [node name="CharacterBody2D" parent="." unique_id=972579330 instance=ExtResource("2_hqyvl")]
-position = Vector2(315, -10)
+position = Vector2(318, -8)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=751495587]
-position = Vector2(-13, 18)
+position = Vector2(-4, 17)
 zoom = Vector2(1.5, 1.5)
+
+[node name="EnemySpawner" type="Node2D" parent="." unique_id=454564557]
+script = ExtResource("3_ki3iq")
+enemy_scene = ExtResource("4_62ljx")
+
+[node name="Timer" type="Timer" parent="EnemySpawner" unique_id=1341872132]
+autostart = true
+
+[connection signal="timeout" from="EnemySpawner/Timer" to="EnemySpawner" method="_on_timer_timeout"]

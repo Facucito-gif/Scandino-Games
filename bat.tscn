@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://x836e6wyb8qf"]
+
+[ext_resource type="Script" uid="uid://cs2enxjq43mio" path="res://bat.gd" id="1_tofr1"]
+[ext_resource type="Texture2D" uid="uid://c3na8qg6lv8wv" path="res://FLYING.png" id="2_vobq3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tubu"]
+atlas = ExtResource("2_vobq3")
+region = Rect2(0, 0, 81, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tecl"]
+atlas = ExtResource("2_vobq3")
+region = Rect2(81, 0, 81, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp0fn"]
+atlas = ExtResource("2_vobq3")
+region = Rect2(162, 0, 81, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulak1"]
+atlas = ExtResource("2_vobq3")
+region = Rect2(243, 0, 81, 71)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0pjmi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tecl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp0fn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulak1")
+}],
+"loop": true,
+"name": &"Fly",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5s65s"]
+radius = 20.09975
+
+[node name="Bat" type="Area2D" unique_id=1727497900 groups=["Enemigos"]]
+script = ExtResource("1_tofr1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1741240539]
+sprite_frames = SubResource("SpriteFrames_0pjmi")
+animation = &"Fly"
+autoplay = "Fly"
+frame_progress = 0.106708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2047439280]
+position = Vector2(-10, 9)
+shape = SubResource("CircleShape2D_5s65s")

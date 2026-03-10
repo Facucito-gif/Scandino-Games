@@ -62,3 +62,8 @@ func _on_ghost_timer_timeout():
 func _on_animated_sprite_2d_animation_finished():
 	if sprite.animation == "ATTACK":
 		sprite.play("IDLE")
+
+func _on_attack_area_area_entered(area):
+	# Si lo que tocamos es un enemigo (asegúrate de que el enemigo tenga un grupo llamado "enemigo")
+	if area.is_in_group("enemigo"):
+		area.recibir_dano()
