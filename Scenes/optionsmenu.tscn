@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cq0oljbl3dnhi"]
+
+[ext_resource type="Script" uid="uid://phexvantnv00" path="res://Scenes/optionsmenu.gd" id="1_kd7nf"]
+
+[node name="optionsmenu" type="Control" unique_id=1197465074]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kd7nf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=701992779]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+color = Color(0.99765676, 0.650162, 0.66748387, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=616896954]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1822112130]
+layout_mode = 2
+
+[node name="IdiomaSelector" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=236298122]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/IdiomaSelector" unique_id=2020553490]
+layout_mode = 2
+text = "optionsmenu_lbl_lenguaje"
+
+[node name="BotonIdioma" type="OptionButton" parent="MarginContainer/VBoxContainer/IdiomaSelector" unique_id=1187036869]
+layout_mode = 2
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=950393916]
+layout_mode = 2
+text = "optionsmenu_lbl_back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

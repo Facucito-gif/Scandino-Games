@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://coqidtdnaqc7i" path="res://Scripts/mainmenu.gd" id="1_pposm"]
 
-[node name="Control" type="Control" unique_id=937114050]
+[node name="mainmenu" type="Control" unique_id=937114050]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,15 +33,15 @@ grow_vertical = 2
 
 [node name="Button" type="Button" parent="BoxContainer" unique_id=1846394534]
 layout_mode = 2
-text = "Jugar"
+text = "mainmenu_btn_start"
 
 [node name="Button2" type="Button" parent="BoxContainer" unique_id=1493201625]
 layout_mode = 2
-text = "Opciones"
+text = "mainmenu_btn_options"
 
 [node name="Button3" type="Button" parent="BoxContainer" unique_id=2050011148]
 layout_mode = 2
-text = "Salir"
+text = "mainmenu_btn_exit"
 
 [connection signal="pressed" from="BoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="BoxContainer/Button2" to="." method="_on_button_2_pressed"]
