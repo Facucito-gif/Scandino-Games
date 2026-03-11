@@ -10,7 +10,8 @@ var dash_distancia = 35.0
 var dash_duracion = 0.1
 
 # Pre-cargar la escena de la estela
-const GHOST_SCENE = preload("res://ghost_effect.tscn")
+#const GHOST_SCENE = preload("res://ghost_effect.tscn")
+#ALERT -NO SÉ QUE ES LO DE ARRIBA Y TE LO COMENTÉ 
 
 func _process(_delta):
 	if Input.is_action_just_pressed("atacar_izq"):
@@ -56,19 +57,20 @@ func ejecutar_ataque(direccion):
 
 # --- CONECTAR LA SEÑAL DEL GHOSTTIMER ---
 # En el panel de Nodos, conecta la señal 'timeout()' del GhostTimer aquí:
-func _on_ghost_timer_timeout():
-	# Instanciar el fantasma
-	var ghost = GHOST_SCENE.instantiate()
-	
-	# Configurar sus propiedades con los datos actuales del sprite
-	ghost.set_ghost_properties(
-		sprite.sprite_frames.get_frame_texture(sprite.animation, sprite.frame),
-		sprite.flip_h,
-		position # Usamos la posición global/del cuerpo
-	)
-	
-	# Añadirlo a la escena principal (no como hijo del personaje, o se movería con él)
-	get_tree().current_scene.add_child(ghost)
+#ALERT TE COMENTÉ TODA ESTA FUNCION DE ABAJO .
+#func _on_ghost_timer_timeout():
+	 #Instanciar el fantasma
+	#var ghost = GHOST_SCENE.instantiate()
+	#
+	## Configurar sus propiedades con los datos actuales del sprite
+	#ghost.set_ghost_properties(
+		#sprite.sprite_frames.get_frame_texture(sprite.animation, sprite.frame),
+		#sprite.flip_h,
+		#position # Usamos la posición global/del cuerpo
+	#)
+	#
+	## Añadirlo a la escena principal (no como hijo del personaje, o se movería con él)
+	#get_tree().current_scene.add_child(ghost)
 
 # --- VOLVER AL IDLE  ---
 func _on_animated_sprite_2d_animation_finished():
