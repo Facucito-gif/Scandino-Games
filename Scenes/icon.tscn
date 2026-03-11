@@ -1,30 +1,29 @@
 [gd_scene format=3 uid="uid://c86rnq88obeem"]
 
 [ext_resource type="PackedScene" uid="uid://don34yj8h1dyj" path="res://Scenes/Character.tscn" id="2_hqyvl"]
+[ext_resource type="PackedScene" uid="uid://bmp8hm74ikcs4" path="res://Scenes/EnemySpawner.tscn" id="3_mremn"]
 [ext_resource type="PackedScene" uid="uid://x836e6wyb8qf" path="res://Scenes/bat.tscn" id="4_62ljx"]
-[ext_resource type="Script" uid="uid://cnrv7q0q04s51" path="res://Scripts/spawner_izquierdo.gd" id="5_ud633"]
-[ext_resource type="Script" uid="uid://df7qeul4rk0xp" path="res://Scripts/spawner_derecho.gd" id="6_yw53o"]
+[ext_resource type="PackedScene" uid="uid://cbrma3fhnhnu5" path="res://Scenes/plataforma1.tscn" id="5_6dpg0"]
 
 [node name="Node2D" type="Node2D" unique_id=1639596064]
 
 [node name="CharacterBody2D" parent="." unique_id=972579330 instance=ExtResource("2_hqyvl")]
-position = Vector2(4, -9)
+position = Vector2(0, -11)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=751495587]
 position = Vector2(-4, 17)
 zoom = Vector2(1.25, 1.25)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=561838112]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=547075439]
+z_index = -1
 
-[node name="SpawnerDerecho" type="Node2D" parent="StaticBody2D" unique_id=542868218]
-script = ExtResource("6_yw53o")
-enemy_scene = ExtResource("4_62ljx")
-direccion_bala = -1
+[node name="Plataforma" parent="TileMapLayer" unique_id=539335963 instance=ExtResource("5_6dpg0")]
 
-[node name="Timer" type="Timer" parent="StaticBody2D/SpawnerDerecho" unique_id=1845469112]
-
-[node name="SpawnerIzquierdo" type="Node2D" parent="StaticBody2D" unique_id=1042718540]
-script = ExtResource("5_ud633")
+[node name="EnemySpawnerIzq" parent="." unique_id=929387044 instance=ExtResource("3_mremn")]
+position = Vector2(-500, -1)
 enemy_scene = ExtResource("4_62ljx")
 
-[node name="Timer" type="Timer" parent="StaticBody2D/SpawnerIzquierdo" unique_id=640630294]
+[node name="EnemySpawnerDer" parent="." unique_id=1520871057 instance=ExtResource("3_mremn")]
+position = Vector2(500, 0)
+enemy_scene = ExtResource("4_62ljx")
+direccion_enemigo = -1

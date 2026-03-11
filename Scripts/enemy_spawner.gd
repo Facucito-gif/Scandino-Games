@@ -1,25 +1,21 @@
 extends Node2D
 
-@export var enemy_scene: PackedScene # Aquí arrastrarás tu archivo Bat.tscn
+@export var enemy_scene: PackedScene
+@export var direccion_enemigo: int = 1 # 1 para Derecha, -1 para Izquierda
 @onready var timer = $Timer
 
 func _on_timer_timeout():
-	spawn_enemy()
-
-func spawn_enemy():
-	var enemy = enemy_scene.instantiate()
-	
-	# Moneda al aire: 0 = Izquierda, 1 = Derecha
-	var lado = randi() % 2 
-	
-	if lado == 0:
-		enemy.position = Vector2(-50, 450) # Aparece a la izq
-		enemy.direccion = 1
-	else:
-		enemy.position = Vector2(1200, 450)
-		enemy.direccion = -1
-		# Esto busca cualquier nodo que sea un Sprite y lo voltea
-		for child in enemy.get_children():
-			if child is Sprite2D or child is AnimatedSprite2D:
-				child.flip_h = true	
-	get_tree().current_scene.add_child(enemy)
+	if enemy_scene:
+		var enemy = enemy_scene.instantiate()
+		
+		# Lo posicionamos donde está el spawner
+		enemy.global_position = global_position
+		
+		# Le pasamos la dirección (importante para el movimiento en bat.gd)
+		enemy.direccion = direccion_enemigo
+		
+		# Si va a la izquierda, espejamos el nodo entero
+		if direccion_enemigo == -1:
+			enemy.scale.x = -1
+			
+		get_tree().current_scene.add_child(enemy)

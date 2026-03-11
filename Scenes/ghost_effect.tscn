@@ -5,7 +5,8 @@
 
 [node name="GhostEffect" type="Sprite2D" unique_id=433731700]
 z_index = 2
+scale = Vector2(1.094, 1)
 texture = ExtResource("1_bk28f")
-hframes = 6
-frame = 1
+region_enabled = true
+region_rect = Rect2(31, 26.5, 64, 67)
 script = ExtResource("1_f6ha8")
