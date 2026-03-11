@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi5rryhutipgn"
-path="res://.godot/imported/ATTACK 1.png-a62497a43d84fb8de9fe1fb615c209a3.ctex"
+uid="uid://ci06colbiphnf"
+path="res://.godot/imported/Tiles.png-9e1ad3fc1b48c159fa79dd265549bd0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ATTACK 1.png"
-dest_files=["res://.godot/imported/ATTACK 1.png-a62497a43d84fb8de9fe1fb615c209a3.ctex"]
+source_file="res://Assets/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-9e1ad3fc1b48c159fa79dd265549bd0a.ctex"]
 
 [params]
 

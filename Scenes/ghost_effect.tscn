@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bjlak508hfudb"]
 
-[ext_resource type="Texture2D" uid="uid://bi5rryhutipgn" path="res://ATTACK 1.png" id="1_bk28f"]
-[ext_resource type="Script" uid="uid://bi3bted0yr164" path="res://ghost_effect.gd" id="1_f6ha8"]
+[ext_resource type="Texture2D" uid="uid://bi5rryhutipgn" path="res://Assets/ATTACK 1.png" id="1_bk28f"]
+[ext_resource type="Script" uid="uid://bi3bted0yr164" path="res://Scripts/ghost_effect.gd" id="1_f6ha8"]
 
 [node name="GhostEffect" type="Sprite2D" unique_id=433731700]
 z_index = 2

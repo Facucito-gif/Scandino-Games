@@ -11,15 +11,23 @@ config_version=5
 [application]
 
 config/name="Scandino Git"
-run/main_scene="res://icon.tscn"
+run/main_scene="res://Assets/icon.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [display]
 
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Scenes/": "blue",
+"res://Scripts/": "yellow"
+}
 
 [global_group]
 

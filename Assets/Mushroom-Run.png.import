@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3kmbu0o63h5"
-path="res://.godot/imported/WhatsApp Image 2025-12-15 at 17.12.04.jpeg-5be6f9395a05d386cb2ebf5c20e35a20.ctex"
+uid="uid://chc6hqxnidspe"
+path="res://.godot/imported/Mushroom-Run.png-58009d10d356df9f6193f8a1be62a806.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WhatsApp Image 2025-12-15 at 17.12.04.jpeg"
-dest_files=["res://.godot/imported/WhatsApp Image 2025-12-15 at 17.12.04.jpeg-5be6f9395a05d386cb2ebf5c20e35a20.ctex"]
+source_file="res://Assets/Mushroom-Run.png"
+dest_files=["res://.godot/imported/Mushroom-Run.png-58009d10d356df9f6193f8a1be62a806.ctex"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://c86rnq88obeem"]
 
-[ext_resource type="Texture2D" uid="uid://ci06colbiphnf" path="res://Tiles.png" id="1_tr34o"]
-[ext_resource type="PackedScene" uid="uid://don34yj8h1dyj" path="res://Character.tscn" id="2_hqyvl"]
-[ext_resource type="PackedScene" uid="uid://x836e6wyb8qf" path="res://bat.tscn" id="4_62ljx"]
-[ext_resource type="Script" uid="uid://cnrv7q0q04s51" path="res://spawner_izquierdo.gd" id="5_ud633"]
-[ext_resource type="Script" uid="uid://df7qeul4rk0xp" path="res://spawner_derecho.gd" id="6_yw53o"]
+[ext_resource type="Texture2D" uid="uid://ci06colbiphnf" path="res://Assets/Tiles.png" id="1_tr34o"]
+[ext_resource type="PackedScene" uid="uid://don34yj8h1dyj" path="res://Scenes/Character.tscn" id="2_hqyvl"]
+[ext_resource type="PackedScene" uid="uid://x836e6wyb8qf" path="res://Scenes/bat.tscn" id="4_62ljx"]
+[ext_resource type="Script" uid="uid://cnrv7q0q04s51" path="res://Scripts/spawner_izquierdo.gd" id="5_ud633"]
+[ext_resource type="Script" uid="uid://df7qeul4rk0xp" path="res://Scripts/spawner_derecho.gd" id="6_yw53o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqyvl"]
 size = Vector2(965, 50.5)

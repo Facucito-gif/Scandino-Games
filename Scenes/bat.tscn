@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://x836e6wyb8qf"]
 
-[ext_resource type="Script" uid="uid://cs2enxjq43mio" path="res://bat.gd" id="1_tofr1"]
-[ext_resource type="Texture2D" uid="uid://c3na8qg6lv8wv" path="res://FLYING.png" id="2_vobq3"]
+[ext_resource type="Script" uid="uid://cs2enxjq43mio" path="res://Scripts/bat.gd" id="1_tofr1"]
+[ext_resource type="Texture2D" uid="uid://c3na8qg6lv8wv" path="res://Assets/FLYING.png" id="2_vobq3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1tubu"]
 atlas = ExtResource("2_vobq3")
