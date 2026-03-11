@@ -36,11 +36,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"Fly",
-"speed": 10.0
+"speed": 9.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_5s65s"]
-radius = 20.09975
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jckqh"]
+radius = 19.0
+height = 62.0
 
 [node name="Bat" type="Area2D" unique_id=1727497900 groups=["Enemigos"]]
 script = ExtResource("1_tofr1")
@@ -49,8 +50,8 @@ script = ExtResource("1_tofr1")
 sprite_frames = SubResource("SpriteFrames_0pjmi")
 animation = &"Fly"
 autoplay = "Fly"
-frame_progress = 0.106708
+frame_progress = 0.25222015
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2047439280]
-position = Vector2(-10, 9)
-shape = SubResource("CircleShape2D_5s65s")
+position = Vector2(-11, -1)
+shape = SubResource("CapsuleShape2D_jckqh")

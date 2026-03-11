@@ -118,6 +118,8 @@ position = Vector2(28, 17.5)
 shape = SubResource("RectangleShape2D_lcuhw")
 disabled = true
 
+[node name="TileMapLayer" type="TileMapLayer" parent="AttackArea/CollisionShape2D" unique_id=1880434833]
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="GhostTimer" to="." method="_on_ghost_timer_timeout"]
 [connection signal="area_entered" from="AttackArea" to="." method="_on_attack_area_area_entered"]

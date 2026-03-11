@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://cp426n1ofse3r"]
+[gd_scene format=3 uid="uid://bbqagcgl8axi6"]
 
-[ext_resource type="PackedScene" uid="uid://cp426n1ofse3r" path="res://Scenes/plataforma.tscn" id="1_vmtdo"]
+[ext_resource type="PackedScene" uid="uid://cbrma3fhnhnu5" path="res://Scenes/plataforma1.tscn" id="1_6ej3t"]
 
-[node name="Node2D" type="Node2D" unique_id=222952531]
+[node name="Node2D" type="Node2D" unique_id=2075019322]
 
-[node name="Plataforma" parent="." unique_id=267843480 instance=ExtResource("1_vmtdo")]
+[node name="Plataforma" parent="." unique_id=539335963 instance=ExtResource("1_6ej3t")]
