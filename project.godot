@@ -13,6 +13,9 @@ config_version=5
 config/name="Scandino Git"
 run/main_scene="uid://d0ti1u8fmk2yi"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/show_image=false
+boot_splash/stretch_mode=2
+boot_splash/image="uid://djgxyxc2clfoo"
 config/icon="res://Assets/icon.svg"
 
 [display]
@@ -20,6 +23,7 @@ config/icon="res://Assets/icon.svg"
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [file_customization]
 

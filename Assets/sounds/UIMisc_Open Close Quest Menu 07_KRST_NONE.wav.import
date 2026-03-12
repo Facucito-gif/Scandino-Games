@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://15msc4qkemer"
+path="res://.godot/imported/UIMisc_Open Close Quest Menu 07_KRST_NONE.wav-b43002c1d67dbde4d6e6902eedb11de5.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/UIMisc_Open Close Quest Menu 07_KRST_NONE.wav"
+dest_files=["res://.godot/imported/UIMisc_Open Close Quest Menu 07_KRST_NONE.wav-b43002c1d67dbde4d6e6902eedb11de5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

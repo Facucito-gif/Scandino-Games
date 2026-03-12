@@ -52,6 +52,7 @@ sprite_frames = SubResource("SpriteFrames_0pjmi")
 animation = &"Fly"
 autoplay = "Fly"
 frame_progress = 0.25222015
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2047439280]
 position = Vector2(-11, -1)
