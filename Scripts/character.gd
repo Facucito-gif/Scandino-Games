@@ -21,7 +21,6 @@ func _process(_delta):
 		ejecutar_ataque("der")
 
 func ejecutar_ataque(direccion):
-	var dash_distancia = 50.0
 	var destino_x = position.x # Guardamos la posición actual
 	
 	if direccion == "der":
@@ -56,8 +55,9 @@ func _on_animated_sprite_2d_animation_finished():
 	if sprite.animation == "ATTACK":
 		sprite.play("IDLE")
 
+
 func _on_attack_area_area_entered(area):
 	if area.is_in_group("enemigos"):
+		print("¡Golpeando a: ", area.name, "!")
 		if area.has_method("recibir_dano"):
-			area.recibir_dano(2) # Le pasamos el daño de 2
-		
+			area.recibir_dano(2) # Le mandamos 2 de daño para matarlo de un toque

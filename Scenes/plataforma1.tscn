@@ -468,8 +468,6 @@ texture = ExtResource("1_an67d")
 [sub_resource type="TileSet" id="TileSet_ki3iq"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
-physics_layer_1/collision_layer = 2
-physics_layer_1/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_otv2m")
 
 [node name="Plataforma" type="TileMapLayer" unique_id=539335963]

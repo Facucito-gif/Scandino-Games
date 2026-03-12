@@ -92,7 +92,7 @@ radius = 13.0
 height = 52.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lcuhw"]
-size = Vector2(40, 21)
+size = Vector2(38, 21)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=972579330]
 script = ExtResource("1_lcuhw")
@@ -112,11 +112,13 @@ shape = SubResource("CapsuleShape2D_kx406")
 wait_time = 0.05
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1444427596]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=601771593]
-position = Vector2(28, 17.5)
+visibility_layer = 2
+position = Vector2(29, 17.5)
 shape = SubResource("RectangleShape2D_lcuhw")
-disabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="AttackArea/CollisionShape2D" unique_id=1880434833]
 

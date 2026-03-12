@@ -87,7 +87,6 @@ locale/fallback="es"
 [layer_names]
 
 2d_physics/layer_1="Solido"
-2d_physics/layer_2="Decoracion"
 
 [physics]
 
