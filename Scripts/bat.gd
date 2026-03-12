@@ -24,8 +24,6 @@ func _process(delta):
 	if position.x > 2500 or position.x < -1500: # Límites mucho más amplios
 		queue_free()
 
-# ... (tus variables de velocidad, frecuencia, etc.)
-
 func recibir_dano(cantidad):
 	if esta_muerto: return
 	
@@ -33,13 +31,12 @@ func recibir_dano(cantidad):
 	vida -= cantidad 
 	
 	if vida <= 0:
+		$AnimatedSprite2D.play("Hurt") # Tu nueva animación
 		esta_muerto = true
 		
-		# Feedback visual: Parpadeo blanco
-		modulate = Color(10, 10, 10) 
-		
+		var impulso_x = position.x + (200 * -direccion) # Los manda lejos según su dirección
 		var tween = create_tween()
-		# Se vuelve transparente al 50% y cae
-		tween.tween_property(self, "modulate", Color(1, 1, 1, 0.5), 0.1)
-		tween.tween_property(self, "position:y", 1000, 0.8).set_ease(Tween.EASE_IN)
+		tween.parallel().tween_property(self, "position:x", impulso_x, 0.4).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_OUT)
+		tween.parallel().tween_property(self, "position:y", position.y - 100, 0.4) # Un saltito hacia arriba
+		tween.tween_property(self, "modulate:a", 0, 0.2) # Se desvanecen
 		tween.tween_callback(queue_free)
