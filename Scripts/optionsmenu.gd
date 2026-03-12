@@ -23,6 +23,11 @@ func _ready():
 		
 	# 3. Conectamos la señal que avisa cuando el jugador elige una opción
 	boton_idioma.item_selected.connect(_al_seleccionar_idioma)
+	
+	var botones = get_tree().get_nodes_in_group("BotonesMenu")
+	for boton in botones:
+		if not boton.pressed.is_connected(AudioManager.reproducir_click):
+			boton.pressed.connect(AudioManager.reproducir_click)
 
 # Esta función se ejecuta cada vez que elegís algo en el desplegable
 func _al_seleccionar_idioma(indice: int):

@@ -41,10 +41,10 @@ layout_mode = 2
 layout_mode = 2
 text = "optionsmenu_lbl_lenguaje"
 
-[node name="BotonIdioma" type="OptionButton" parent="MarginContainer/VBoxContainer/IdiomaSelector" unique_id=1187036869]
+[node name="BotonIdioma" type="OptionButton" parent="MarginContainer/VBoxContainer/IdiomaSelector" unique_id=1187036869 groups=["BotonesMenu"]]
 layout_mode = 2
 
-[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=950393916]
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=950393916 groups=["BotonesMenu"]]
 layout_mode = 2
 text = "optionsmenu_lbl_back"
 

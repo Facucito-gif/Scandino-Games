@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://rdfv2yvsaq2t"]
+
+[ext_resource type="Script" uid="uid://bb0y6o07340rj" path="res://Scenes/audio_manager.gd" id="1_4tj6f"]
+[ext_resource type="AudioStream" uid="uid://d1nqb4suois6u" path="res://Assets/sounds/UIClick_Menu Button 01_KRST_NONE.wav" id="1_sm2tf"]
+
+[node name="AudioManager" type="Node" unique_id=513493879]
+script = ExtResource("1_4tj6f")
+
+[node name="sound_menu_accept" type="AudioStreamPlayer" parent="." unique_id=787451982]
+stream = ExtResource("1_sm2tf")
