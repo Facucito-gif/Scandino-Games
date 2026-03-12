@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d1nqb4suois6u"
+path="res://.godot/imported/UIClick_Menu Button 01_KRST_NONE.wav-2ec3d155d1a34495cde14ae17c4e00eb.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/UIClick_Menu Button 01_KRST_NONE.wav"
+dest_files=["res://.godot/imported/UIClick_Menu Button 01_KRST_NONE.wav-2ec3d155d1a34495cde14ae17c4e00eb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

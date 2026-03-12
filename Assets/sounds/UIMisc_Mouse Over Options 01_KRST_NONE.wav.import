@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nywk0kbx1e84"
+path="res://.godot/imported/UIMisc_Mouse Over Options 01_KRST_NONE.wav-2ac64d3d1bf7f7769eebe51154aa2cec.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/UIMisc_Mouse Over Options 01_KRST_NONE.wav"
+dest_files=["res://.godot/imported/UIMisc_Mouse Over Options 01_KRST_NONE.wav-2ac64d3d1bf7f7769eebe51154aa2cec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

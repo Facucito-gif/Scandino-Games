@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://boohs6jgj6yau"
+path="res://.godot/imported/UIMisc_Start Game 02_KRST_NONE.wav-00c571db4ba8bd6be6768320b420aa04.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/UIMisc_Start Game 02_KRST_NONE.wav"
+dest_files=["res://.godot/imported/UIMisc_Start Game 02_KRST_NONE.wav-00c571db4ba8bd6be6768320b420aa04.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

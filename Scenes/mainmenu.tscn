@@ -31,15 +31,15 @@ offset_bottom = 46.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="BoxContainer" unique_id=1846394534]
+[node name="Button" type="Button" parent="BoxContainer" unique_id=1846394534 groups=["BotonesMenu"]]
 layout_mode = 2
 text = "mainmenu_btn_start"
 
-[node name="Button2" type="Button" parent="BoxContainer" unique_id=1493201625]
+[node name="Button2" type="Button" parent="BoxContainer" unique_id=1493201625 groups=["BotonesMenu"]]
 layout_mode = 2
 text = "mainmenu_btn_options"
 
-[node name="Button3" type="Button" parent="BoxContainer" unique_id=2050011148]
+[node name="Button3" type="Button" parent="BoxContainer" unique_id=2050011148 groups=["BotonesMenu"]]
 layout_mode = 2
 text = "mainmenu_btn_exit"
 

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bul4qgbuwbaih"
+path="res://.godot/imported/UIMisc_Mouseover Locations On The Map 01_KRST_NONE.wav-5a2a57323893df4c6b5c02a68d7cc0d4.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/UIMisc_Mouseover Locations On The Map 01_KRST_NONE.wav"
+dest_files=["res://.godot/imported/UIMisc_Mouseover Locations On The Map 01_KRST_NONE.wav-5a2a57323893df4c6b5c02a68d7cc0d4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

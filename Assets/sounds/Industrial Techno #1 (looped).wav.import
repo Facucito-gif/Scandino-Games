@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cavljuh5sgqmb"
+path="res://.godot/imported/Industrial Techno #1 (looped).wav-a5677912e192fb3adbeb941a3a3720c5.sample"
+
+[deps]
+
+source_file="res://Assets/sounds/Industrial Techno #1 (looped).wav"
+dest_files=["res://.godot/imported/Industrial Techno #1 (looped).wav-a5677912e192fb3adbeb941a3a3720c5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
